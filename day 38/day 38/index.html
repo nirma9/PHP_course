@@ -1,0 +1,37 @@
+<h2> AJAX example</h2>
+
+<button onclick="getmesage()">Clik to load</button>
+
+<p id = "output"></p>
+
+<script>
+               function getmesage(){
+                              fetch('msg.php')
+                              .then(response =>response.text())
+                              .then(data=>{
+                                             document.getElementById('output').innerHTML=data;
+                              });
+               }
+
+
+               </script>
+
+<input type = "text" id = "name" placeholder=" Enter name">
+<button onclick="send()">send</button>
+
+<p id  = "Output"></p>
+
+<script>
+               function send(){
+                              let name = document.getElementById("name").value;
+
+                              fetch("msg.php?user= " +name)
+                              .then(res=>res.text())
+                              .then(data=>{
+                                             document.getElementById("Output").innerHTML=data;
+                              });
+
+
+               
+               }
+</script>

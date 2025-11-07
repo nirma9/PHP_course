@@ -1,0 +1,10 @@
+body { font-family: Arial; background: #f5f5f5; }
+.container { max-width: 900px; margin: 40px auto; background: #fff; padding: 20px; border-radius: 8px; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; border: 1px solid #ddd; }
+
+.btn { padding: 6px 12px; background: #007bff; color: #fff; border-radius: 4px; text-decoration:none; }
+label { display:block; margin-top:10px; }
+input { width:100%; padding:8px; margin-top:5px; }
+button { margin-top:10px; padding:8px 15px; }
